@@ -88,6 +88,9 @@ $run_configuration = array_merge( [ 'run', '--rm', 'codeception', 'run' ], $conf
 
 fix_container_dir_file_modes( 'wordpress', '/var/www/html/wp-content', 'a+rwx' );
 
+echo magenta( "Temporarily sleeping to test if there's a file write lag" );
+sleep( 30 );
+
 // Finally run the command.
 $status     = tric_realtime()( array_merge( $run_configuration, $args( '...' ) ) );
 $has_failed = file_exists( $root . '/tests/_output/failed' );
