@@ -5,8 +5,9 @@ namespace Tribe\Test;
 if ( $is_help ) {
 	echo "Sets the current plugins directory to be the one used by tric.\n";
 	echo PHP_EOL;
-	echo colorize( "signature: <light_cyan>{$cli_name} here</light_cyan>\n" );
-	echo colorize( "signature: <light_cyan>{$cli_name} here reset</light_cyan>\n" );
+	echo colorize( "signature: <light_cyan>{$cli_name} here [reset]</light_cyan>\n" );
+	echo colorize( "example: <light_cyan>{$cli_name} here</light_cyan>\n" );
+	echo colorize( "example: <light_cyan>{$cli_name} here reset</light_cyan>\n" );
 	return;
 }
 
