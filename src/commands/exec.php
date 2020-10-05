@@ -34,4 +34,7 @@ if ( empty( $command ) ) {
 	exit( 1 );
 }
 
-exit( tric_realtime()( array_merge( [ 'exec', $service ], $command ) ) );
+$process = tric_process()( array_merge( [ 'exec', $service ], $command ) );
+echo $process( 'string_output' );
+
+exit( $process( 'status' ) );
