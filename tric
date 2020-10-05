@@ -83,6 +83,7 @@ Available commands:
 <light_cyan>up</light_cyan>             Starts a container part of the stack.
 <light_cyan>restart</light_cyan>        Restarts a container part of the stack.
 <light_cyan>serve</light_cyan>          Starts the stack and serves it on localhost.
+<light_cyan>exec</light_cyan>           Executes a command in a service container.
 
 HELP;
 
@@ -122,6 +123,7 @@ switch ( $subcommand ) {
 	case 'config':
 	case 'debug':
 	case 'down':
+	case 'exec':
 	case 'here':
 	case 'info':
 	case 'init':
