@@ -27,7 +27,7 @@ $args = args( [
 ] );
 
 $cli_name = basename( $argv[0] );
-const CLI_VERSION = '0.5.19';
+const CLI_VERSION = '0.5.20';
 
 $cli_header = implode( ' - ', [
 	light_cyan( $cli_name ) . ' version ' . light_cyan( CLI_VERSION ),
@@ -139,6 +139,7 @@ switch ( $subcommand ) {
 	case 'build-subdir':
 	case 'composer':
 	case 'config':
+	case 'dc':
 	case 'debug':
 	case 'down':
 	case 'here':
