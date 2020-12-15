@@ -169,7 +169,7 @@ services:
     command: -Lkfv --retry-connrefused --retry 30 --retry-delay 1 -o /dev/null --stderr /dev/null wordpress.test:80
 
   chrome:
-    image: selenium/standalone-chrome:3.141.59-oxygen
+    image: selenium/standalone-chrome:4.0.0
     networks:
       - tric
     extra_hosts:
