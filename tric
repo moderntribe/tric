@@ -118,8 +118,6 @@ switch ( $subcommand ) {
 		maybe_prompt_for_stack_update();
 		break;
 	case 'cc':
-	case 'npm':
-	case 'npm_lts':
 	case 'restart':
 	case 'run':
 	case 'serve':
@@ -148,8 +146,10 @@ switch ( $subcommand ) {
 	case 'init':
 	case 'interactive':
 	case 'logs':
-	case 'phpcs':
+	case 'npm':
+	case 'npm_lts':
 	case 'phpcbf':
+	case 'phpcs':
 	case 'reset':
 	case 'target':
 	case 'update':

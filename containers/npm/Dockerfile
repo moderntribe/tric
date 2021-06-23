@@ -1,4 +1,4 @@
-ARG NODE_VERSION=8.9
+ARG NODE_VERSION=10.16.0
 
 FROM tarampampam/node:${NODE_VERSION}-alpine
 

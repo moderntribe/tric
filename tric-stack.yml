@@ -252,7 +252,7 @@ services:
     build:
       context: containers/npm
       args:
-        NODE_VERSION: 8.9
+        NODE_VERSION: 10.16.0
     image: tric_npm
     user: "${DOCKER_RUN_UID:-}:${DOCKER_RUN_GID:-}"
     environment:
